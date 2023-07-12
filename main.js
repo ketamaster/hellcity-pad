@@ -118,7 +118,7 @@ Para comenzar a jugar con nosotros⤵️
 
 1️⃣- Envianos tu *NOMBRE COMPLETO*
 
-2️⃣  Consultanos CBU disponible
+2️⃣- Consultanos CBU disponible
 
 3️⃣- Obtené 100% de *BONIFICACIÓN EN TU PRIMER CARGA*🤑
 
