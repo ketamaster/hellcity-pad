@@ -31,20 +31,18 @@ form.addEventListener("submit", function (e) {
   if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0) {
     cbuxl.addEventListener("click", () => {
       const texto = `⚠️ *NO ENVIAR DINERO SIN CONSULTAR CBU SEGUNDOS ANTES* ⚠️
-‼️(LOS CBU CAMBIAN, *PUEDE PERDER SU DINERO, QUEDA AVISADO*)‼️
-
-💰 *MÍNIMO DE CARGA $1.000* 💰
+‼️( *LOS CBU CAMBIAN, PUEDE PERDER SU DINERO, QUEDA AVISADO* )‼️
 
 *DATOS DE LA CUENTA*
-
 Nombre Completo: *${inputNombre}*
 CBU: *${inputCBU}*
 Alias: *${inputAlias}*
 
-*ENVIAR*:
+💰 *MÍNIMO DE CARGA $1.000* 💰
+
+*ENVIAR:*
 🔻COMPROBANTE
-🔻USUARIO de la plataforma
-🔻NOMBRE COMPLETO del TITULAR de la cuenta bancaria
+🔻USUARIO de la PLATAFORMA
 
 *INGRESÁ ACÁ PARA JUGAR:* https://casinocityvip.com`;
       const elementoTemporal = document.createElement("textarea");
@@ -81,13 +79,10 @@ registrar.addEventListener("click", function (e) {
   console.log(user);
 
   const texto = `🔸 *USUARIO REGISTRADO* 🔸
-
 👤 *TU USUARIO:* ${user}
 🔐 *CONTRASEÑA:* vip123
 
-*INGRESÁ ACÁ PARA JUGAR:* https://casinocityvip.com
-
-CONSULTA CBU PARA INGRESAR DINERO⤵️`;
+*CONSULTA CBU PARA INGRESAR DINERO*⤵️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -102,28 +97,19 @@ CONSULTA CBU PARA INGRESAR DINERO⤵️`;
 });
 
 bienvenida.addEventListener("click", () => {
-  const texto = `Hola‼️
-Bienvenido/a al casino
+  const texto = `Bienvenido/a a...
 🔥 *HELL CITY ONLINE* 🔥
-el mejor sitio de entretenimiento: https://casinocityvip.com 🎰
+El mejor sitio de entretenimiento: https://casinocityvip.com 🎰
 
 💸 *24HS ABIERTO* 💸
-
 Contamos con muchos juegos para que te diviertas y multipliques tu dinero🍀
 
 💰 *CARGA MÍNIMA $1.000*
 💰 *RETIRO MÍNIMO $2.000*
 
-Para comenzar a jugar con nosotros⤵️
+*PARA COMENZAR A JUGAR CON NOSOTROS*⤵️
 
-1️⃣- Envianos tu *NOMBRE COMPLETO*
-
-2️⃣- Consultanos CBU disponible
-
-3️⃣- Obtené 100% de *BONIFICACIÓN EN TU PRIMER CARGA*🤑
-
-🚨 *IMPORTANTE* 🚨
-*SIEMPRE CONSULTAR CBU SEGUNDOS ANTES DE ENVIAR DINERO, CAMBIA CONSTANTEMENTE*‼️`;
+Envianos tu *NOMBRE* y *APELLIDO* así te generamos un usuario y te *REGALAMOS* un *100%* de *BONIFICACIÓN EN TU PRIMER CARGA* 🙌🏻`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -134,13 +120,13 @@ Para comenzar a jugar con nosotros⤵️
 });
 
 retirar.addEventListener("click", () => {
-  const texto = `💲Para retirar tu dinero respondé este mensaje indicádonos *EN ORDEN*:
+  const texto = `*PARA RETIRAR TU DINERO RESPONDÉ ESTE MENSAJE INDICÁNDONOS EN ORDEN:*
 
-1️⃣ Nombre de usuario
-2️⃣ Nombre y apellido que figura en tu cuenta de banco
-3️⃣ Monto que deseás retirar
-4️⃣ CBU / CVU
-5️⃣ ALIAS
+🔥 Nombre de usuario
+🔥 Nombre y apellido que figura en tu CBU/CVU
+🔥 Monto que deseás retirar
+🔥 CBU / CVU
+🔥 ALIAS
 
 💰 *MÍNIMO DE RETIRO: $2.000* 💰
 
