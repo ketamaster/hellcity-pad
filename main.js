@@ -2,18 +2,12 @@ let cbuxl = document.getElementById("cbuxl");
 let cbu = document.getElementById("cbu");
 let registrar = document.getElementById("modal-button");
 let bienvenida = document.getElementById("bienvenida");
-let info = document.getElementById("info");
-let retirar = document.getElementById("retirar");
-let exitos = document.getElementById("exitos");
-let premioEnviado = document.getElementById("premioEnviado");
 let contraseña = document.getElementById("contraseña");
 let noIngreso = document.getElementById("noIngreso");
-let soporte = document.getElementById("soporte");
 let demorasPago = document.getElementById("demorasPago");
 let solicitoUsuario = document.getElementById("solicitoUsuario");
 let cbuEquivocado = document.getElementById("cbuEquivocado");
-let ordenLlegada = document.getElementById("ordenLlegada");
-let demorasCargas = document.getElementById("demorasCargas");
+let sistemaPagos = document.getElementById("sistemaPagos");
 let form = document.getElementById("form");
 let form_button = document.getElementById("formButton");
 let usuario = document.getElementById("usuario");
@@ -119,55 +113,6 @@ Envianos tu *NOMBRE* y *APELLIDO* así te generamos un usuario y te *REGALAMOS* 
   document.body.removeChild(elementoTemporal);
 });
 
-retirar.addEventListener("click", () => {
-  const texto = `*PARA RETIRAR TU DINERO RESPONDÉ ESTE MENSAJE INDICÁNDONOS EN ORDEN:*
-
-🔥 Nombre de usuario
-🔥 Nombre y apellido que figura en tu CBU/CVU
-🔥 Monto que deseás retirar
-🔥 CBU / CVU
-🔥 ALIAS
-
-💰 *MÍNIMO DE RETIRO: $2.000* 💰
-
-Aguardá unos instantes y en breve serás enviado al sector de pagos⏳
-*Tu chat va a ser archivado, por ende, será leído de manera frecuente, SEA PACIENTE* 🙏🏻`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
-
-exitos.addEventListener("click", () => {
-  const texto = `Tus fichas *ya fueron retiradas* y tu premio fué enviado al sector de pagos🤑
-
-Ya te encontrás en fila para ser abonado 💸🥳
-
-🙏🏻 *NO respondas este mensaje porque sino tu chat va a estar último/a en la fila de premios, AGUARDÁ TU TURNO.* 🙏🏻`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
-
-premioEnviado.addEventListener("click", () => {
-  const texto = `🥳💸 *PREMIO ENVIADO* 💸🥳
-‼️ *Felicitaciones* ‼️, espero que lo disfrutes!! *Muchas gracias por jugar con nosotros*🔥`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
-
 contraseña.addEventListener("click", () => {
   const texto = `🔓 *CONTRASEÑA RESTABLECIDA* 🔓
 Por favor, recargá la página y si es posible, *copiá y pegá* los datos así se evitan errores de tipeo y, por lo tanto, no se bloquea el usuario😜`;
@@ -211,6 +156,19 @@ cbuEquivocado.addEventListener("click", () => {
 
 Por favor, aguardá con paciencia a que ingresemos a esa cuenta y verifiquemos que el dinero haya ingresado. PUEDE *DEMORAR UNAS HORAS*.‼️
 *HAY QUE SER RESPONSABLE CON TU DINERO DEBIDO A QUE SI SE ENVÍA DINERO A UNA CUENTA INACTIVA A LA QUE NO TENEMOS ACCESO, LO PIERDE*😬`;
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = texto;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  elementoTemporal.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+});
+
+sistemaPagos.addEventListener("click", () => {
+  const texto = `🔸A continuación te dejamos el *link directo* para comunicarte con *Maddie* encargada del *sistema de pagos* ⬇️
+
+https://wa.link/yzmq1d`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
